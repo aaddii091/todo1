@@ -1,38 +1,94 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgba(128, 128, 128, 0.658);
+}
+.main_cont {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15vh;
+  border: 1px solid black;
+  min-height: 50vh;
+  max-height: auto;
+  width: 20rem;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.61);
+  background-color: rgba(235, 253, 255, 0.795);
+  color: rgba(10, 4, 4, 0.959);
+  font-family: "Roboto", sans-serif;
+}
+.main_cont h1 {
+  background-color: bisque;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.411);
+}
+input {
+  padding: 10px 5px;
+  border: 0px;
+  background-color: rgba(240, 248, 255, 0);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.555);
+}
+input::placeholder {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+}
+input:focus {
+  background-color: rgba(240, 248, 255, 0);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  outline: none;
+  border: 0px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.add {
+  position: fixed;
+  padding: 5px 12px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-left: 2.5px;
+  font-size: 1.5rem;
+  transition: all 0.25s;
+  right: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.add:hover {
+  background-color: rgb(93, 245, 93);
+  transform: scale(1.2);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+li {
+  margin-left: 3.5rem;
+  margin-top: 5px;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  list-style: none;
 }
+.neg {
+  position: absolute;
+  padding: 1px 8px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-left: 6px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: 1.5rem;
+  transform: rotate(45deg);
+  transition: all 0.25s;
+}
+.neg:hover {
+  background-color: rgb(245, 93, 93);
+  transform: scale(1.2);
+}
+.listadded {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
